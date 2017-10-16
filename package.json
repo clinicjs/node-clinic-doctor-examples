@@ -1,0 +1,19 @@
+{
+  "name": "clinic-examples",
+  "version": "1.0.0",
+  "description": "Examples for the clinic tool",
+  "repository": "nearform/node-clinic-examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard | snazzy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "restify": "^6.0.1"
+  }
+}
