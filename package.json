@@ -1,6 +1,6 @@
 {
-  "name": "clinic-examples",
-  "version": "1.0.0",
+  "name": "@nearform/clinic-examples",
+  "version": "0.1.0",
   "description": "Examples for the clinic tool",
   "repository": "nearform/node-clinic-examples",
   "main": "index.js",
