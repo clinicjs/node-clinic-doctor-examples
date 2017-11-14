@@ -32,5 +32,12 @@ node slow-io
 wrk http://127.0.0.1:3000
 ```
 
+### memory leak
+
+```
+node memory-leak
+autocannon -c 500 -d 20 -p 500 http://127.0.0.1:3000
+```
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
