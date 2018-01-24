@@ -2,35 +2,41 @@
 
 Server examples for `clinic`
 
+```
+npm install -g clinic
+npm install -g autocannon
+```
+
 ## Examples
 
 ### Deoptimization
 
 ```
-node slow-deoptimization
-wrk http://127.0.0.1:3000
+clinic doctor -- node slow-deoptimization
+autocannon http://127.0.0.1:3000
 ```
 
 ### Event Loop
 
 ```
-node slow-event-loop
-wrk http://127.0.0.1:3000
+clinic doctor -- node slow-event-loop
+autocannon http://127.0.0.1:3000
 ```
 
 ### GC
 
 ```
-node slow-gc
-wrk -c 2500 -t 512 http://127.0.0.1:3000
+clinic doctor -- node slow-gc
+autocannon -c 2500 -t 512 http://127.0.0.1:3000
 ```
 
 ### I/O
 
 ```
-node slow-io
-wrk http://127.0.0.1:3000
+clinic doctor -- node slow-io
+autocannon http://127.0.0.1:3000
 ```
 
 ## License
-[MIT](https://tldrlegal.com/license/mit-license)
+
+[Apache 2.0](<https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)>)
