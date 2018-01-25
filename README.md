@@ -27,7 +27,7 @@ autocannon http://127.0.0.1:3000
 
 ```
 clinic doctor -- node slow-gc
-autocannon -c 2500 -t 512 http://127.0.0.1:3000
+autocannon -c 2500 http://127.0.0.1:3000
 ```
 
 ### I/O
