@@ -12,29 +12,25 @@ npm install -g autocannon
 ### Sync I/O
 
 ```
-clinic doctor -- node sync-io
-autocannon http://127.0.0.1:3000
+clinic doctor --on-port 'autocannon 127.0.0.1:$PORT' -- node sync-io
 ```
 
 ### Event Loop
 
 ```
-clinic doctor -- node slow-event-loop
-autocannon http://127.0.0.1:3000
+clinic doctor --on-port 'autocannon 127.0.0.1:$PORT' -- node slow-event-loop
 ```
 
 ### GC
 
 ```
-clinic doctor -- node slow-gc
-autocannon -c 2500 http://127.0.0.1:3000
+clinic doctor --on-port 'autocannon -c 2500 127.0.0.1:$PORT' -- node slow-gc
 ```
 
 ### I/O
 
 ```
-clinic doctor -- node slow-io
-autocannon http://127.0.0.1:3000
+clinic doctor --on-port 'autocannon 127.0.0.1:$PORT' -- node slow-io
 ```
 
 ## License
