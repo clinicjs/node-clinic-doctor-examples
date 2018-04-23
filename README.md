@@ -9,10 +9,10 @@ npm install -g autocannon
 
 ## Examples
 
-### Deoptimization
+### Sync I/O
 
 ```
-clinic doctor -- node slow-deoptimization
+clinic doctor -- node sync-io
 autocannon http://127.0.0.1:3000
 ```
 
