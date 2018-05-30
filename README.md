@@ -9,13 +9,6 @@ npm install -g autocannon
 
 ## Examples
 
-### Sync I/O
-
-```
-clinic doctor -- node sync-io
-autocannon http://127.0.0.1:3000
-```
-
 ### Event Loop
 
 ```
@@ -34,6 +27,13 @@ autocannon -c 2500 http://127.0.0.1:3000
 
 ```
 clinic doctor -- node slow-io
+autocannon http://127.0.0.1:3000
+```
+
+### Sync I/O
+
+```
+clinic doctor -- node sync-io
 autocannon http://127.0.0.1:3000
 ```
 
