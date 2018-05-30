@@ -1,8 +1,9 @@
 'use strict'
 
 const restify = require('restify')
-const proc = require('child_process')
-
+const fs = require('fs')
+const path = require('path')
+const tmp = path.join(__dirname, 'tmp')
 const server = restify.createServer()
 
 server.get('/', function (req, res, next) {
@@ -15,11 +16,13 @@ server.listen(3000)
 
 process.on('SIGINT', function () {
   console.error('Caught SIGINT, shutting down.')
+  try { fs.unlinkSync(tmp) } catch (e) {}
   server.close()
 })
 
-function sleep (ms) {
-  proc.execSync(`node -e "setTimeout(() => {}, ${ms})"`, {
-    env: Object.assign({}, process.env, {NODE_OPTIONS: ''})
-  })
+function sleep (ms){
+  var now = Date.now()
+  while(Date.now() < now + ms) { 
+    fs.closeSync(fs.openSync(tmp, 'a'))
+  } 
 }
