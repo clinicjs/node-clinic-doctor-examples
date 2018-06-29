@@ -1,4 +1,4 @@
-# node-clinic-examples
+# node-clinic-doctor-examples
 
 Server examples for `clinic`
 
