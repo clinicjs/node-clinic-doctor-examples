@@ -15,25 +15,25 @@ npm install -g autocannon
 ### Event Loop
 
 ```
-clinic doctor --on-port 'autocannon localhost:$PORT' -- node slow-event-loop
+clinic doctor --autocannon [ / ] -- node slow-event-loop
 ```
 
 ### GC
 
 ```
-clinic doctor --on-port 'autocannon localhost:$PORT -c 2500' -- node slow-gc
+clinic doctor --autocannon [ -c 2500 / ] -- node slow-gc
 ```
 
 ### I/O
 
 ```
-clinic doctor --on-port 'autocannon localhost:$PORT' -- node slow-io
+clinic doctor --autocannon [ / ] -- node slow-io
 ```
 
 ### Sync I/O
 
 ```
-clinic doctor --on-port 'autocannon localhost:$PORT' -- node sync-io
+clinic doctor --autocannon [ / ] -- node sync-io
 ```
 
 ## License
