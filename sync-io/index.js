@@ -20,9 +20,9 @@ process.on('SIGINT', function () {
   server.close()
 })
 
-function sleep (ms){
+function sleep (ms) {
   var now = Date.now()
-  while(Date.now() < now + ms) { 
+  while (Date.now() < now + ms) {
     fs.closeSync(fs.openSync(tmp, 'a'))
-  } 
+  }
 }
