@@ -36,6 +36,13 @@ clinic doctor --autocannon [ / ] -- node slow-io
 clinic doctor --autocannon [ / ] -- node sync-io
 ```
 
+### memory leak
+
+```
+node memory-leak
+autocannon -c 500 -d 20 -p 500 http://127.0.0.1:3000
+```
+
 ## License
 
 [Apache 2.0](<https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)>)
